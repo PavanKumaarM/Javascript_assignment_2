@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <title>My Resume</title>
+        <style>
+            
+            body {
+                text-align: center;
+                background-color: #f0f4f8;
+                color: #263238;
+    
+            }   
+
+            p {
+                font-size: 20px;
+                font-family: "Times New Roman", sans-serif;
+                font-weight: 100;
+                padding: 0.2em;
+                line-height: 100%;
+                color: inherit;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 70px;
+            }
+
+            hr {
+                border: 1px solid #c5d5e8;
+                margin: 20px 0;
+                
+            }
+
+            h1 {
+                color: #163e70;
+                font-weight: bold;
+                margin-bottom: 8px;
+                
+            }
+
+            .box {
+                width: 800px;
+                margin: 30px auto;
+                background: #ffffff;
+                color: #263238;
+                padding: 30px;
+                border: 1px solid #dce5ef;
+                box-shadow: 0 8px 25px rgba(30, 55, 90, 0.12);
+                
+            }
+
+            a {
+                color: #1769aa;
+
+            }
+
+            button {
+                background: #163e70;
+                color: #ffffff;
+                border: none;
+                padding: 10px 18px;
+                border-radius: 6px;
+                cursor: pointer;
+                
+            }
+
+            button:hover {
+                background: #285a91;
+            }
+
+
+            .box.dark-mode {
+                background: #171e2b;
+                color: #e2e8f0;
+                border-color: #354258;
+                box-shadow:
+                    0 0 0 1px rgba(148, 163, 184, 0.12),
+                    0 10px 35px rgba(0, 0, 0, 0.45),
+                    0 0 18px rgba(96, 165, 250, 0.08);
+            }
+
+            .box.dark-mode h1 {
+                color: #8abaff;
+            }
+
+            .box.dark-mode p {
+                color: #d5deea;
+            }
+
+            .box.dark-mode hr {
+                border-color: #354258;
+            }
+
+            .box.dark-mode a {
+                color: #7dc0ff;
+            }
+
+            .box.dark-mode button {
+                background: #34445d;
+                color: #f1f5f9;
+            }
+
+            .box.dark-mode button:hover {
+                background: #465d7c;
+            }
+
+            
+            p{
+                font-size: 20px;
+                font-family: Times New Roman, sans-serif;
+                font-weight: 100;
+                padding: 0.2em;
+                line-height: 100%;
+            }
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 70px;
+     
+            
+            }
+            hr{
+                border: 1px solid darkblue;
+                margin: 20px 0;
+            }
+            h1{
+                color: darkblue;
+                font-weight: bold;
+                margin-bottom: 8px;
+            }
+            .box{
+                width:800px;
+                margin: 30px auto;
+                background: white;
+                padding: 30px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .dark-mode {
+                background-color: #2e2e2e;
+                background: #121212;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" >
+        <br>
+        <br>
+        <br>    
+        <img src="P1.jpeg" alt="Example Image" width="100" height="100" align="right" id="profile">
+        <button id="show" align="right" >Hide</button>
+        <button id="dark mode" onclick="myFunction()">Dark Mode</button>
+        <h1 align="center" style="margin-left: 140px;">PAVAN KUMAAR M </h1>
+        <br>
+        <p >Email: pavankumaar.05@gmail.com | Phone: +91-9940440858<br>
+        <a href="https://www.linkedin.com/in/m-pavan-kumaar-4700152a5/" target="_blank">LinkedIn</a> | <a href="https://github.com/PavanKumaarM" target="_blank">GitHub</a></p>
+        <hr>
+        <h1>Objective</h1>
+        <p>Results-driven Software Engineer with strong problem-solving skills and hands-on<br>
+        experience in building scalable, high-performance applications. Seeking to leverage <br>
+        modern technologies, clean architecture, and continuous learning to deliver impactful solutions that drive business growth and innovation.</p>
+        <hr>
+        <h1> Education</h1>
+        <p> B.E. CSE | S.A Engineering College, Chennai | CGPA: 8.06/10| Expected: May 2027<br>
+           HSC | AIR FORCE SCHOOL | 68.8% | 2023<br>
+            SSC | AIR FORCE SCHOOL | 70.6% | 2021</p>
+        <hr>
+        <h1>Projects    </h1>
+        <p> • Sales Prediction System (ML + Backend + Frontend)<br>
+            • Live Streaming App (Flutter+ Supabase +Livekit)<br>
+         • RideMate — Ride-Sharing & Companion Finder App (Flutter+ Supabase)</p>
+        <hr>
+        <h1>Skills</h1>
+        <p> • Programming Languages: Python, Java, C++<br>
+            • Web Development: HTML, CSS, JavaScript, React<br>
+            • Mobile Development: Flutter</p>
+        <hr>
+        <h1>Internships</h1>
+        <p>Internship, July-december/2025<br>
+            Webzenith Solutions - Chennai (Remote)<br>
+            • Analyzed problems and worked with teams to develop solutions.<br>
+            • Contributed to a positive team environment by collaborating with fellow interns on group projects and presentations.</p>
+        <hr>
+        <h1>ACHIEVEMENTS & CERTIFICATIONS</h1>
+        <p> • Completed certification course on diploma in computer applications – (2023)<br>
+            • Certificate of Completion on Technology Job Simulation from Deloitte – (2025 )<br>
+            • Completed cisco certification on networking basics and cyber security – (2025)</p>
+        </div>
+        <script>
+            function myFunction() {
+                var element = document.querySelector(".box");
+                element.classList.toggle("dark-mode");
+                var button = document.getElementById("dark mode");
+                button.textContent = element.classList.contains("dark-mode")
+                    ? "Light Mode"
+                    : "Dark Mode";
+            }
+            const button = document.getElementById("show");
+            const image = document.getElementById("profile");
+
+            button.addEventListener("click", function () {
+            if (image.style.visibility === "hidden") {
+                image.style.visibility = "visible";
+                button.textContent = "Hide";
+            } else {
+                image.style.visibility = "hidden";
+                button.textContent = "Show";
+            }
+            });
+        </script>
+    </body>
+</html>
